@@ -4,29 +4,35 @@ public class DivideWithoutDivisionOperator {
 
     public static void main(String[] args) {
 
+        divide(10,5);
 
-        int dividend = 16;
-        int divisor = 8;
-        int result;
-        int remainder;
-        int count;
+
 
 
 
 
     }
-    public static void divide(int dividend, int divisor){
+    public static void divide(int n, int d){ // n= numerator d= divisor --> n/d
         int result = 0;
-        if (dividend == 0){
+        if (n == 0){
             System.err.println("you cannot divide by 0");
             System.exit(1);
-        }else if (dividend == 0){
+
+        }else if (n == 0){
             System.out.println(0);
-        }else if (dividend == divisor){
+
+        }else if (n == d){
             System.out.println(1);
-        }else if (dividend>0 && divisor>0 && dividend < divisor){
+
+        }else if (n>0 && d>0 && n < d ){
             System.out.println(0);
-        }else if (dividend >0 && divisor<0){ // either one of them is positive
+
+        }else if (n >0 && d>0){ // both of them are positive
+            int count = 0;
+            while(n>d){
+                n-= d;
+                count++;
+            }
 
         }else{
 
