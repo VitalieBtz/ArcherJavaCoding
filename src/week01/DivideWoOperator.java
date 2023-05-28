@@ -1,8 +1,6 @@
 package week01;
 
-import java.util.Arrays;
-
-public class Devide {
+public class DivideWoOperator {
     public static void Divide(int number1, int number2) {
 
         int count = 0;

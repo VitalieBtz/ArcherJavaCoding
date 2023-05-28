@@ -1,9 +1,8 @@
-package week1;
+package week01;
 
 public class FINRA {
 
     public static void main(String[] args) {
-
 
         String result = "";
 
