@@ -2,7 +2,7 @@ package week01;
 
 public class OddOrEven {
     
-    public static String oDDorEven(int a) {
+    public static String oddOrEven(int a) {
         return a % 2 == 0 ? "is Even " : "is Odd";
     }
 
