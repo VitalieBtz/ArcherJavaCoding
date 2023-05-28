@@ -1,6 +1,25 @@
 package week02;
 
 public class DivisibleBy3_5_15 {
+
+    public static void divisibleBy3Five15(int n){
+
+        String divisibleBy15 = "Divisible by 15: ";
+        String divisibleBy5 = "Divisible by 5: ";
+        String divisibleBy3 = "Divisible by 3: ";
+
+        for (int i = 1; i <= n; i++) {
+
+            if (i % 15 == 0){
+                divisibleBy15 += i + " ";
+            } else if (i % 3 == 0){
+                divisibleBy3 += i + " ";
+            } else if (i % 5 == 0) {
+                divisibleBy5 += i + " ";
+            }
+        }
+        System.out.println(divisibleBy15 + "\n" + divisibleBy5 + "\n" + divisibleBy3);
+    }
 }
 /*
  Numbers – Divisible by 3, 5, 15
