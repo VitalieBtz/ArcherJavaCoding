@@ -11,7 +11,7 @@ public class ConsecutiveNums {
 
         for (int i = 1; i <= num; i++) {
 
-            // 2 3 5 Codility, Test, Coders
+            //  2 3 5 Codility, Test, Coders
             if (i % 30 == 0) {
                 System.out.println(" Codility,Test, Coders");
             } else if (i % 15 == 0) {
