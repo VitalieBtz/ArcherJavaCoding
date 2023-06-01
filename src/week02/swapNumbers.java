@@ -9,6 +9,7 @@ public class swapNumbers {
         a = a - b;
 
         System.out.println("a = " + a + "\nb = " + b);
+
     }
 }
 /*

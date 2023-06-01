@@ -2,6 +2,21 @@ package week02;
 
 public class printConsecutiveNumbers {
 
+    public static void consecutiveNumbers(int num){
+        for(int i = 1;  i <= num; i ++){
+          
+            if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0){
+                System.out.print("CodilityTestCoders ");
+            } else if (i % 2 == 0 && i % 3 == 0 || i % 2 == 0 && i % 5 == 0 || i % 3 == 0 && i % 5 == 0 ) {
+                System.out.print("CodilityTest ");
+            } else if (i % 3 == 0 || i % 2 == 0 || i % 5== 0) {
+                System.out.print("Codility ");
+            }else {
+                System.out.print(i + " ");
+            }
+        }
+     }
+      /*
     public static void printConsecutiveNumbers(int n){
 
         for (int i = 1; i <=n; i++) {
@@ -25,6 +40,7 @@ public class printConsecutiveNumbers {
             }
         }
     }
+    */
 }
 /*
  Numbers – Print Consecutive Numbers

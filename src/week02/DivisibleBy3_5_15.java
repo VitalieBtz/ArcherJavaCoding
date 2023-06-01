@@ -1,5 +1,7 @@
 package week02;
 
+import java.util.Scanner;
+
 public class DivisibleBy3_5_15 {
 
     public static void divisibleBy3Five15(int n){
