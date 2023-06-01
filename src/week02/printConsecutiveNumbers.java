@@ -2,14 +2,9 @@ package week02;
 
 public class printConsecutiveNumbers {
 
-
-
-    public static void main(String[] args) {
-        consecutiveNumbers(30);
-    }
-
     public static void consecutiveNumbers(int num){
         for(int i = 1;  i <= num; i ++){
+          
             if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0){
                 System.out.print("CodilityTestCoders ");
             } else if (i % 2 == 0 && i % 3 == 0 || i % 2 == 0 && i % 5 == 0 || i % 3 == 0 && i % 5 == 0 ) {
@@ -19,9 +14,33 @@ public class printConsecutiveNumbers {
             }else {
                 System.out.print(i + " ");
             }
+        }
+     }
+      /*
+    public static void printConsecutiveNumbers(int n){
 
+        for (int i = 1; i <=n; i++) {
+
+            String result = "";
+
+            if (i % 2 == 0){
+                result = "Codility";
+            }
+            if (i % 3 == 0){
+                result += "Test";
+            }
+            if (i % 5 == 0){
+                result += "Coders";
+            }
+
+            if (result.isEmpty()){
+                System.out.println(i);
+            } else {
+                System.out.println(result);
+            }
         }
     }
+    */
 }
 /*
  Numbers – Print Consecutive Numbers

@@ -2,21 +2,13 @@ package week02;
 
 public class swapNumbers {
 
-    public static void main (String [] args){
+    public static void swapNumbers(int a, int b){
 
-        int num1 = 8;
-        int num2 = 5;
+        a = a + b;
+        b = a - b;
+        a = a - b;
 
-        num1 = num1 + num2;
-        //      8      5   = 13 == > num1
-        num2 = num1 - num2;
-        //      13  - 5    =  8 ==> num2
-        num1 = num1 - num2;
-        //     13   -  8   =  5 ==> num1
-
-        System.out.println("num1 = " + num1);
-        System.out.println("num2 = " + num2);
-
+        System.out.println("a = " + a + "\nb = " + b);
 
     }
 }

@@ -4,30 +4,23 @@ import java.util.Scanner;
 
 public class DivisibleBy3_5_15 {
 
-    public static void main(String[] args) {
+    public static void divisibleBy3Five15(int n){
 
-        Scanner input = new Scanner(System.in);
-        int num = input.nextInt();
+        String divisibleBy15 = "Divisible by 15: ";
+        String divisibleBy5 = "Divisible by 5: ";
+        String divisibleBy3 = "Divisible by 3: ";
 
-        String divisibleBy15 = "";
-        String divisibleBy5 = "";
-        String divisibleBy3 = "";
+        for (int i = 1; i <= n; i++) {
 
-        for( int i = 1; i <= num; i++){
-            if ( i % 15 ==0){
-                divisibleBy15+=  i + " ";
-            } else if (i % 5 == 0 ) {
-                divisibleBy5+= i + " ";
-            } else if (i % 3 == 0) {
+            if (i % 15 == 0){
+                divisibleBy15 += i + " ";
+            } else if (i % 5 == 0){
                 divisibleBy3 += i + " ";
-
+            } else if (i % 3 == 0) {
+                divisibleBy5 += i + " ";
             }
         }
-        System.out.println("divisibleBy15 = " + divisibleBy15);
-        System.out.println("divisibleBy5 = " + divisibleBy5);
-        System.out.println("divisibleBy3 = " + divisibleBy3);
-
-        input.close();
+        System.out.println(divisibleBy15 + "\n" + divisibleBy5 + "\n" + divisibleBy3);
     }
 }
 /*
