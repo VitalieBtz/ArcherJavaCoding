@@ -1,6 +1,17 @@
 package week03;
 
 public class ReverseNegativeNumber {
+
+    public static int reverseNegNumber(int n){
+
+        int reversed = 0;
+        while(n != 0){
+            int digit = n % 10;
+            reversed = reversed * 10 + digit;
+            n /= 10;
+        }
+        return reversed;
+    }
 }
 /*
  Numbers -- Reverse negative number
