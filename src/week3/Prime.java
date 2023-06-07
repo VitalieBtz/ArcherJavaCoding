@@ -4,6 +4,8 @@ public class Prime {
 
     public static void main(String[] args) {
 
+        System.out.println(isPrime(5));
+        System.out.println(isPrime(8));
         System.out.println(isPrime(13));
 
     }
