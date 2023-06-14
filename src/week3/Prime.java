@@ -5,7 +5,8 @@ public class Prime {
     public static void main(String[] args) {
 
         System.out.println(isPrime(3));
-        System.out.println(isPrime(7));
+        System.out.println(isPrime(6));
+
 
 
 
