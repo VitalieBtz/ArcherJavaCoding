@@ -1,4 +1,4 @@
-package interview_coding_tasks.week04;
+package week04;
 
 public class FrequencyOfCharacters {
     public static void main(String[] args) {

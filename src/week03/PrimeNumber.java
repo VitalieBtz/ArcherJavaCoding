@@ -1,9 +1,7 @@
-package interview_coding_tasks.week03;
+package week03;
 
 public class PrimeNumber {
     public static void main(String[] args) {
-
-
         int num = 20;
 
         for (int i = 1; i <= num; i++) {
@@ -20,8 +18,6 @@ public class PrimeNumber {
             }
 
         }
+
     }
 }
-
-
-
