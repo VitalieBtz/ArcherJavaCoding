@@ -3,30 +3,21 @@ package week03;
 public class ReverseNegativeNumber {
 
     public static void main(String[] args) {
-
-        int x = -57;
-        String rev = "" + x;
-        String output ="";
-
-        for (int i = rev.length()-1; i > 0 ; i--) {
-            output += rev.charAt(i);
-        }
-
-        System.out.println(-Integer.parseInt(output));
-
+        System.out.println(ReverseNegativeNumber.reverseNegative(-31));
+        System.out.println(ReverseNegativeNumber.reverseNegative(-111));
+        System.out.println(ReverseNegativeNumber.reverseNegative(-1213));
+        System.out.println(ReverseNegativeNumber.reverseNegative(-62));
     }
-//----------------DIFFERENT APPROACH--------------------------------------
 
-    public static int reverseNegNumber(int n){
+    public static int reverseNegative(int n) {
+        int reverseNum = 0;
 
-        int reversed = 0;
-
-        while(n != 0){
-            int digit = n % 10;
-            reversed = reversed * 10 + digit;
-            n /= 10;
+        for (; n != 0; n = n / 10) {
+            int remainder = n%10;
+            reverseNum = remainder + reverseNum * 10;
         }
-        return reversed;
+
+        return reverseNum;
     }
 }
 /*

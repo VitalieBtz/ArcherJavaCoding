@@ -44,5 +44,4 @@ public class DivideWoOperator {
         return (result + decimalCount) * sign;
     }
 
-
 }
