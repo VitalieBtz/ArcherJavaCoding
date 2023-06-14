@@ -3,7 +3,7 @@ package week4;
 public class RemoveDuplicates {
 
     public static void main(String[] args) {
-        System.out.println(removeDuplicates("xxxtttzzzzh"));
+        System.out.println(removeDuplicates("AAABBBCCCDD"));
     }
 
 
@@ -13,8 +13,8 @@ public class RemoveDuplicates {
         String result = ""; //because string is immutable we cannot remove the string, we need new string object
 
         for (int i = 0; i < str.length(); i++) { //  add each character from str to result one by one with iterating.
-            if (result.contains(""+ str.charAt(i))) { // if the character is already contained in new one,
-                continue; // skip
+            if (result.contains(""+ str.charAt(i))) { //  concatenating empty string because contains method wants String, charAt method wants Char.
+                continue; // if the character is already contained in new string, skip it
             }
 
             result = result + str.charAt(i);// otherwise we will continue to add
