@@ -4,6 +4,18 @@ import java.util.Arrays;
 
 public class SameLetters {
 
+    public static boolean Same_characters(String str1, String str2){
+
+        char[] first = str1.toCharArray();
+        char[] second = str2.toCharArray();
+
+        Arrays.sort(first);
+        Arrays.sort(second);
+
+        return Arrays.equals(first, second);
+    }
+
+    //---------------- Same Approach, but longer code ----------------------------------
     public static boolean sameLetters(String a, String b){
 
         a = a.replaceAll(" ", "");
