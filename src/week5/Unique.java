@@ -14,7 +14,7 @@ public class Unique {
 
             char each = str.charAt(i);
 
-            if (!unique.contains("" + each)) {
+            if (str.indexOf(each) == str.lastIndexOf(each)) {
                 unique += each;
             }
 
