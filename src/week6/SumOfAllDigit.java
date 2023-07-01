@@ -1,7 +1,5 @@
 package week6;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
 
 public class SumOfAllDigit {
 
@@ -24,6 +22,7 @@ public class SumOfAllDigit {
         System.out.println("sum of all digits in the text is : " +sum);
 
     }
+
 
 }
 

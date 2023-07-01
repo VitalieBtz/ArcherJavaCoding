@@ -7,11 +7,12 @@ public class FindMax {
     public static void main(String[] args) {
 
         int[] arr = {99, 12, 23, 32, 44, 57, 6};
+
         System.out.println(Arrays.stream(arr).max());
 
         System.out.println("=====================================");
         
-        int max = arr[0];// assume that first element is the maximum number
+        int max = arr[0];
 
         for (int i = 0; i < arr.length; i++) {
             

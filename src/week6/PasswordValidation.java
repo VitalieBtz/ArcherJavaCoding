@@ -2,33 +2,45 @@ package week6;
 
 public class PasswordValidation {
 
+       public static boolean passwordValidation(String pswd){
 
-/*
-    public static void main(String[] args) {
+        boolean isValid = true;
 
-        String password = "cbsjdk3hti&n987#";
+        int upperCaseLet = 0;
+        int lowerCaseLet = 0;
+        int specialChar = 0;
+        int digit = 0;
 
-        if(password.length() >= 6){
 
-            char s = password.charAt(0);
-            if( s >= 'A' && s <= 'Z'){
-                System.out.println("PassWord should at least contain one upper-case letter");
-            }else if (s >= 'a' && s <= 'z') {
-                System.out.println("PassWord should at least contain one lowercase letter");
-            }else if (s >= '0' && s <= '9'){
-                System.out.println("Password should at least contain a digit");
-            }else{
-                System.out.println("Password should at least contain one special character");
+        for (int i = 0; i < pswd.length(); i++){
+
+            char each = pswd.charAt(i);
+
+            if (each >= '0' && each <= '9'){
+                digit++;
+            } else if (each >= 'a' && each <= 'z') {
+                lowerCaseLet++;
+            } else if (each >='A' && each <='Z') {
+                upperCaseLet++;
+            } else {
+                specialChar++;
             }
-
-        }else{
-            System.out.println("False");
         }
 
+        if (pswd.length() < 6 || upperCaseLet < 1 || lowerCaseLet < 1 || digit < 1  || specialChar < 1){
 
- */
+            isValid = false;
 
+        }
+        return isValid;
     }
+    public static void main(String[] args) {
+        System.out.println(passwordValidation("asdaa1//dkAdk.!"));
+    }
+ }
+
+
+
 
 
 
